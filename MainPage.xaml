@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Prism_practice.Views.MainPage"
+             Title="主頁">
+
+  
+
+        <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="140"/>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="80"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="87"/>
+            <ColumnDefinition Width="87"/>
+            <ColumnDefinition Width="87"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+            
+        <Label Grid.Row="0" Grid.Column="3" BackgroundColor="Black" Text="{Binding num}" TextColor="White" FontSize="60" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" VerticalTextAlignment="End" HorizontalTextAlignment="Center"/>
+        <BoxView Grid.Row="0" Grid.Column="1" Color="Black" HorizontalOptions="Fill" VerticalOptions="Fill"/>
+        <BoxView Grid.Row="0" Grid.Column="2" Color="Black" HorizontalOptions="Fill" VerticalOptions="Fill"/>
+        <BoxView Grid.Row="0" Grid.Column="0" Color="Black" HorizontalOptions="Fill" VerticalOptions="Fill"/>
+
+        <Button Grid.Row="2" Grid.Column="0" BackgroundColor="LightGray" Text="7" TextColor="Black" FontSize="30" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Command="{Binding ClickCommand}" CommandParameter="7"/>
+        <Button Grid.Row="2" Grid.Column="1" BackgroundColor="LightGray" Text="8" TextColor="Black" FontSize="30" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Command="{Binding ClickCommand}" CommandParameter="8"/>
+        <Button Grid.Row="2" Grid.Column="2" BackgroundColor="LightGray" Text="9" TextColor="Black" FontSize="30" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Command="{Binding ClickCommand}" CommandParameter="9"/>
+        <Button Grid.Row="2" Grid.Column="3" BackgroundColor="Orange" Text="*" TextColor="Black" FontSize="30" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Command="{Binding ClickCommand}" CommandParameter="*"/>
+
+        <Button Grid.Row="3" Grid.Column="0" BackgroundColor="LightGray" Text="4" TextColor="Black" FontSize="30" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Command="{Binding ClickCommand}" CommandParameter="4"/>
+        <Button Grid.Row="3" Grid.Column="1" BackgroundColor="LightGray" Text="5" TextColor="Black" FontSize="30" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Command="{Binding ClickCommand}" CommandParameter="5"/>
+        <Button Grid.Row="3" Grid.Column="2" BackgroundColor="LightGray" Text="6" TextColor="Black" FontSize="30" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Command="{Binding ClickCommand}" CommandParameter="6"/>
+        <Button Grid.Row="3" Grid.Column="3" BackgroundColor="Orange" Text="-" TextColor="Black" FontSize="30" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Command="{Binding ClickCommand}" CommandParameter="-"/>
+
+        <Button Grid.Row="4" Grid.Column="0" BackgroundColor="LightGray" Text="1" TextColor="Black" FontSize="30" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Command="{Binding ClickCommand}" CommandParameter="1"/>
+        <Button Grid.Row="4" Grid.Column="1" BackgroundColor="LightGray" Text="2" TextColor="Black" FontSize="30" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Command="{Binding ClickCommand}" CommandParameter="2"/>
+        <Button Grid.Row="4" Grid.Column="2" BackgroundColor="LightGray" Text="3" TextColor="Black" FontSize="30" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Command="{Binding ClickCommand}" CommandParameter="3"/>
+        <Button Grid.Row="4" Grid.Column="3" BackgroundColor="Orange" Text="+" TextColor="Black" FontSize="30" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Command="{Binding ClickCommand}" CommandParameter="+"/>
+
+        <Button Grid.Row="5" Grid.Column="0" BackgroundColor="LightGray" Text="0" TextColor="Black" FontSize="30" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Command="{Binding ClickCommand}" CommandParameter="0"/>
+        <Button Grid.Row="5" Grid.Column="1" BackgroundColor="LightGray" Text=" " TextColor="Black" FontSize="30" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
+        <Button Grid.Row="5" Grid.Column="2" BackgroundColor="LightGray" Text="." TextColor="Black" FontSize="30" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Command="{Binding ClickCommand}" CommandParameter="."/>
+        <Button Grid.Row="5" Grid.Column="3" BackgroundColor="Orange" Text="=" TextColor="Black" FontSize="30" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Command="{Binding ClickCommand}" CommandParameter="="/>
+
+        <Button Grid.Row="1" Grid.Column="0" BackgroundColor="LightGray" Text="AC" TextColor="Black" FontSize="30" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Command="{Binding ClickCommand}" CommandParameter="AC"/>
+        <Button Grid.Row="1" Grid.Column="1" BackgroundColor="LightGray" Text="+/-" TextColor="Black" FontSize="30" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Command="{Binding ClickCommand}" CommandParameter="+/-"/>
+        <Button Grid.Row="1" Grid.Column="2" BackgroundColor="LightGray" Text="%" TextColor="Black" FontSize="30" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Command="{Binding ClickCommand}" CommandParameter="%"/>
+        <Button Grid.Row="1" Grid.Column="3" BackgroundColor="Orange" Text="/" TextColor="Black" FontSize="30" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Command="{Binding ClickCommand}" CommandParameter="※"/>
+
+    </Grid>
+
+</ContentPage>
